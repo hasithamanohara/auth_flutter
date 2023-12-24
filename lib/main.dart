@@ -10,20 +10,44 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "My App",
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar:AppBar(
-          title:const Text("My App"),
-          backgroundColor:const  Color.fromARGB(255, 90, 190, 100),
+        body: SafeArea(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                width: double.infinity,
+                height: 100,
+                decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(5)),
+              ),
+              Container(
+                width: double.infinity,
+                height: 100,
+                decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(5)),
+              ),
+              Container(
+                width: double.infinity,
+                height: 100,
+                decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(5)),
+              ),
+              Container(
+                width: double.infinity,
+                height: 300,
+                decoration: BoxDecoration(
+                    color: Colors.yellow,
+                    borderRadius: BorderRadius.circular(5)),
+              )
+            ],
+          ),
         ),
       ),
-      // home:Scaffold(
-      //   appBar:AppBar(
-      //     title:const Text("My App"),
-      //     backgroundColor:const Color.fromARGB(255, 19, 190, 242),
-      //   ),
-      // body:const Icon(Icons.add),
-      // ),
     );
   }
 }
