@@ -37,10 +37,16 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                width:double.infinity,
-                height: 100,
-                color: Colors.red,
+              Center(
+                child: Container(
+                  width: double.infinity,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10000),
+                    color: Colors.green,
+                  ),
+                  child: const Center(child: Text("Hasitha")),
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -48,7 +54,7 @@ class MyApp extends StatelessWidget {
                   Container(
                     width: 110,
                     height: 100,
-                    color: Color.fromARGB(255, 134, 47, 192),
+                    color: Colors.red,
                   ),
                   Container(
                     width: 110,
@@ -62,10 +68,20 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
-              Container(
-                width: double.infinity,
-                height: 100,
-                color: Colors.red,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  width: double.infinity,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    image: const DecorationImage(
+                      image: AssetImage('assets/aseone.jpg'),
+                      fit: BoxFit.fill,
+                    ),
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.green,
+                  ),
+                ),
               ),
             ],
           ),
